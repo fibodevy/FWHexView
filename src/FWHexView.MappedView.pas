@@ -2851,7 +2851,7 @@ begin
       if RawData[RowIndex].JmpToAddr = 0 then Exit;
       DoJmpTo(RowIndex, jsPushToUndo);
     end;
-    VK_ESCAPE: DoJmpTo(0, jsPopFromUndo);
+    VK_BACK: DoJmpTo(0, jsPopFromUndo);
   end;
 end;
 
